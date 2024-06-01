@@ -1,0 +1,463 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Helvetica, Arial, sans-serif;
+    background-color: #317575;
+    color: white;
+    min-width: 280px;
+    z-index: -1;
+}
+
+.section {
+    padding: 20px 20px;
+}
+
+/* section-1 */
+
+.section-1 {
+    z-index: 1;
+    color: white;
+}
+
+.heading {
+    text-align: center;
+    margin: 10px 0;
+    color: #00fbfb;
+}
+
+.navbar {
+    background-color: rgb(32, 127, 122);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.brand {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+}
+
+.menu li a {
+    padding: 0 20px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.menu li a:hover {
+    color: rgb(194, 190, 190);
+}
+
+/* section-2 */
+
+.section-2 {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    z-index: -1;
+}
+
+.intro {
+    margin: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.intro .name {
+    z-index: 1;
+    padding-bottom: 20px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.intro .name .name-text {
+    color: rgba(0, 266, 231);
+    font-size: 40px;
+}
+
+.intro .name div {
+    font-size: 40px;
+}
+
+.intro .role {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.intro .resume-button {
+    background-color: #00efdb;
+    height: 32px;
+    width: 176px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    padding-top: 6px;
+    border-radius: 4px;
+}
+
+.intro .resume-button a {
+    color: white;
+    text-decoration: none;
+}
+
+.intro .resume-button:hover {
+    background-color: #00c5b1;
+    transition: background-color 0.3s;
+}
+
+/* section-3 */
+
+.section-3 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hr {
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid white;
+}
+
+.about-content {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.about-content .text1 {
+    padding-bottom: 5px;
+    font-size: 18px;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skill {
+    flex: 1 1 50%;
+    padding: 10px 10px;
+}
+
+.percentage {
+    display: inline-block;
+    color: #76c7c0;
+}
+
+.progress-container {
+    display: inline-block;
+    margin: 10px 0;
+    width: 100%;
+    height: 10px;
+    background-color: #979797;
+    border-radius: 25px;
+    position: relative;
+}
+
+.progress-bar {
+    height: 10px;
+    width: 0;
+    background-color: #00ffea;
+    border-radius: 25px 0 0 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: width 2s ease;
+}
+
+.progress-bar[data-progress="85"] {
+    width: 85%;
+}
+
+.progress-bar[data-progress="75"] {
+    width: 75%;
+}
+
+.progress-bar[data-progress="70"] {
+    width: 70%;
+}
+
+.progress-bar[data-progress="65"] {
+    width: 65%;
+}
+
+.progress-bar[data-progress="80"] {
+    width: 80%;
+}
+
+/* section-4 */
+.project-list {
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.todo-app {
+    background-image: url('todoapp.avif');
+}
+
+.calculator {
+    background-image: url('calculator.jpg');
+}
+
+.rock-paper-scissor {
+    background-image: url('rock-paper-scissors.jpg');
+}
+
+.learning-log {
+    background-image: url('learning-log.jpg');
+}
+
+.project {
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 200px;
+    width: 300px;
+    margin: 10px;
+    border-radius: 10px;
+    transition: transform 0.1s ease-in-out, opacity 0.05s ease-in-out, filter 0.05s ease-in-out;
+}
+
+.project:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+    filter: brightness(1.2);
+}
+
+.content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: #76c7c0;
+    text-align: left;
+    padding: 10px;
+}
+
+.content .title {
+    font-size: 20px;
+}
+
+.content .title a {
+    color: blueviolet;
+}
+
+.content .title a:hover {
+    color: black;
+}
+
+/* section-5 */
+
+.education-content {
+    margin: 15px;
+    text-align: center;
+}
+
+.college {
+    margin-bottom: 15px;
+}
+
+.marks {
+    font-size: 18px;
+    font-weight: 530;
+    padding: 8px 0;
+}
+
+.education-content .name {
+    padding: 8px 0;
+}
+
+/* section-6 */
+
+.section-6 {
+    display: flex;
+    justify-content: center;
+}
+
+.section-6 .contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.contact-form {
+    display: inline-block;
+    width: 100%;
+    max-width: 600px;
+}
+
+.contact-form .div {
+    padding-bottom: 15px;
+    width: 100%;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #76c7c0;
+    outline: none;
+    box-shadow: 0 0 5px rgba(118, 199, 192, 0.5);
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #aaa;
+}
+
+.contact-form .submit-button {
+    background-color: #00efdb;
+    height: 40px;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    padding-top: 10px;
+    border-radius: 2px;
+    margin-top: 5px;
+    transition: background-color 0.3s;
+}
+
+.contact-form .submit-button:hover {
+    background-color: #00c5b1;
+}
+
+.contact-form .submit-button a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.contact-info {
+    margin-top: 20px;
+}
+
+.contact-info .email,
+.contact-info .phone,
+.contact-info .other {
+    padding: 10px 0;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: #76c7c0;
+    transition: color 0.3s;
+}
+
+.contact-info a:hover {
+    color: #529b9a;
+}
+
+.contact-info .other .linkedin,
+.contact-info .other .github {
+    margin: 7px 10px;
+    display: inline-block;
+}
+
+.footer {
+    text-align: center;
+    padding: 30px 0;
+    background-color: #29675f;
+    color: white;
+    width: 100%;
+}
+
+@media(max-width:400px) {
+    .skill {
+        flex: 1 1 100%;
+    }
+
+    .app {
+        flex: 1 1 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        background-color: rgb(32, 127, 122);
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu li {
+        padding: 10px 0;
+    }
+
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 90vw;
+    }
+}
+
+@media (min-width: 769px) {
+    .navbar {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        background-color: rgb(32, 127, 122);
+    }
+
+    /* .intro-image {
+        background-image: url('vaseemkhan.png');
+        background-size: cover;
+        height: 500px;
+        width: 500px;
+    } */
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 90vw;
+        max-width: 600px;
+    }
+
+    .contact-form {
+        width: 90vw;
+        max-width: 600px;
+    }
+
+    .intro .resume-button {
+        height: 40px;
+        width: 210px;
+        padding-top: 10px;
+    }
+}
